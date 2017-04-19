@@ -62,6 +62,9 @@ $(function(){ // on dom ready
     
     ready: function(){
       // ready 1
-    }
+    },
+
+    maxZoom: 2,
+    minZoom: 0.5
   });
 }); // on dom ready

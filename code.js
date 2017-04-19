@@ -1,4 +1,4 @@
-$(function(){ // on dom ready
+function init(){ // on dom ready
 
   var elesJson = {
     nodes: [
@@ -67,4 +67,4 @@ $(function(){ // on dom ready
     maxZoom: 2,
     minZoom: 0.5
   });
-}); // on dom ready
+}; // on dom ready

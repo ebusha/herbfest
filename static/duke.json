@@ -1,0 +1,2194 @@
+{
+  "edges": [
+    {
+      "data": {
+        "id": "FNFTAX.csvFNFNUM",
+        "source": "FNFTAX.csv",
+        "target": "FNFNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvTAXON",
+        "source": "FNFTAX.csv",
+        "target": "TAXON"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvTAXAUTHOR",
+        "source": "FNFTAX.csv",
+        "target": "TAXAUTHOR"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvGENUS",
+        "source": "FNFTAX.csv",
+        "target": "GENUS"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvSPECIES",
+        "source": "FNFTAX.csv",
+        "target": "SPECIES"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvSUBSPECIES",
+        "source": "FNFTAX.csv",
+        "target": "SUBSPECIES"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvVARIETY",
+        "source": "FNFTAX.csv",
+        "target": "VARIETY"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvFORMA",
+        "source": "FNFTAX.csv",
+        "target": "FORMA"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvCULTIVAR",
+        "source": "FNFTAX.csv",
+        "target": "CULTIVAR"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvSPAUT",
+        "source": "FNFTAX.csv",
+        "target": "SPAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvSPSAUT",
+        "source": "FNFTAX.csv",
+        "target": "SPSAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvSPVAUT",
+        "source": "FNFTAX.csv",
+        "target": "SPVAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvSPFAUT",
+        "source": "FNFTAX.csv",
+        "target": "SPFAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvCULTAUT",
+        "source": "FNFTAX.csv",
+        "target": "CULTAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvFAMILY",
+        "source": "FNFTAX.csv",
+        "target": "FAMILY"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvSPCMT",
+        "source": "FNFTAX.csv",
+        "target": "SPCMT"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvPLCO",
+        "source": "FNFTAX.csv",
+        "target": "PLCO"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvTAXNO",
+        "source": "FNFTAX.csv",
+        "target": "TAXNO"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvVALIDTAXNO",
+        "source": "FNFTAX.csv",
+        "target": "VALIDTAXNO"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvGRINVERIFY",
+        "source": "FNFTAX.csv",
+        "target": "GRINVERIFY"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvUSEAGE",
+        "source": "FNFTAX.csv",
+        "target": "USEAGE"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvUSERID",
+        "source": "FNFTAX.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvCREATED",
+        "source": "FNFTAX.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFTAX.csvMODIFIED",
+        "source": "FNFTAX.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "PARTS.csvPPCO",
+        "source": "PARTS.csv",
+        "target": "PPCO"
+      }
+    },
+    {
+      "data": {
+        "id": "PARTS.csvPPNA",
+        "source": "PARTS.csv",
+        "target": "PPNA"
+      }
+    },
+    {
+      "data": {
+        "id": "PARTS.csvUSERID",
+        "source": "PARTS.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "PARTS.csvCREATED",
+        "source": "PARTS.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "PARTS.csvMODIFIED",
+        "source": "PARTS.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "REFERENCES.csvREFERENCE",
+        "source": "REFERENCES.csv",
+        "target": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "REFERENCES.csvLONGREF",
+        "source": "REFERENCES.csv",
+        "target": "LONGREF"
+      }
+    },
+    {
+      "data": {
+        "id": "REFERENCES.csvNOTE",
+        "source": "REFERENCES.csv",
+        "target": "NOTE"
+      }
+    },
+    {
+      "data": {
+        "id": "REFERENCES.csvUSERID",
+        "source": "REFERENCES.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "REFERENCES.csvCREATED",
+        "source": "REFERENCES.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "REFERENCES.csvMODIFIED",
+        "source": "REFERENCES.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvAGGNO",
+        "source": "AGGREGAC.csv",
+        "target": "AGGNO"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvCHEM",
+        "source": "AGGREGAC.csv",
+        "target": "CHEM"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvACTIVITY",
+        "source": "AGGREGAC.csv",
+        "target": "ACTIVITY"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvDOSAGE",
+        "source": "AGGREGAC.csv",
+        "target": "DOSAGE"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvREFERENCE",
+        "source": "AGGREGAC.csv",
+        "target": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvMAJORACT",
+        "source": "AGGREGAC.csv",
+        "target": "MAJORACT"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvUSERID",
+        "source": "AGGREGAC.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvCREATED",
+        "source": "AGGREGAC.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csvMODIFIED",
+        "source": "AGGREGAC.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "SUPERACT.csvSUPERACT",
+        "source": "SUPERACT.csv",
+        "target": "SUPERACT"
+      }
+    },
+    {
+      "data": {
+        "id": "SUPERACT.csvACTIVITY",
+        "source": "SUPERACT.csv",
+        "target": "ACTIVITY"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEM_MEANS.csvchem_id",
+        "source": "CHEM_MEANS.csv",
+        "target": "chem_id"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEM_MEANS.csvpart_id",
+        "source": "CHEM_MEANS.csv",
+        "target": "part_id"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEM_MEANS.csvcnt",
+        "source": "CHEM_MEANS.csv",
+        "target": "cnt"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEM_MEANS.csvavg",
+        "source": "CHEM_MEANS.csv",
+        "target": "avg"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEM_MEANS.csvstd",
+        "source": "CHEM_MEANS.csv",
+        "target": "std"
+      }
+    },
+    {
+      "data": {
+        "id": "COMMON_NAMES.csvCNNAM",
+        "source": "COMMON_NAMES.csv",
+        "target": "CNNAM"
+      }
+    },
+    {
+      "data": {
+        "id": "COMMON_NAMES.csvFNFNUM",
+        "source": "COMMON_NAMES.csv",
+        "target": "FNFNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "COMMON_NAMES.csvCNID",
+        "source": "COMMON_NAMES.csv",
+        "target": "CNID"
+      }
+    },
+    {
+      "data": {
+        "id": "COMMON_NAMES.csvUSERID",
+        "source": "COMMON_NAMES.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "COMMON_NAMES.csvCREATED",
+        "source": "COMMON_NAMES.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "COMMON_NAMES.csvMODIFIED",
+        "source": "COMMON_NAMES.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvETHNO",
+        "source": "ETHNOBOT.csv",
+        "target": "ETHNO"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvACTIVITY",
+        "source": "ETHNOBOT.csv",
+        "target": "ACTIVITY"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvGENUS",
+        "source": "ETHNOBOT.csv",
+        "target": "GENUS"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvSPECIES",
+        "source": "ETHNOBOT.csv",
+        "target": "SPECIES"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvSPAUT",
+        "source": "ETHNOBOT.csv",
+        "target": "SPAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvSPRANK",
+        "source": "ETHNOBOT.csv",
+        "target": "SPRANK"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvSPXNAM",
+        "source": "ETHNOBOT.csv",
+        "target": "SPXNAM"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvSPXAUT",
+        "source": "ETHNOBOT.csv",
+        "target": "SPXAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvFAMILY",
+        "source": "ETHNOBOT.csv",
+        "target": "FAMILY"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvCNAME",
+        "source": "ETHNOBOT.csv",
+        "target": "CNAME"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvCOUNTRY",
+        "source": "ETHNOBOT.csv",
+        "target": "COUNTRY"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvREFERENCE",
+        "source": "ETHNOBOT.csv",
+        "target": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvLONGREF",
+        "source": "ETHNOBOT.csv",
+        "target": "LONGREF"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvEFFECTIVE",
+        "source": "ETHNOBOT.csv",
+        "target": "EFFECTIVE"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvTAXON",
+        "source": "ETHNOBOT.csv",
+        "target": "TAXON"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvTAXAUTHOR",
+        "source": "ETHNOBOT.csv",
+        "target": "TAXAUTHOR"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvUSERID",
+        "source": "ETHNOBOT.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvCREATED",
+        "source": "ETHNOBOT.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csvMODIFIED",
+        "source": "ETHNOBOT.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "DOSAGE.csvCHEM",
+        "source": "DOSAGE.csv",
+        "target": "CHEM"
+      }
+    },
+    {
+      "data": {
+        "id": "DOSAGE.csvDOSAGE",
+        "source": "DOSAGE.csv",
+        "target": "DOSAGE"
+      }
+    },
+    {
+      "data": {
+        "id": "DOSAGE.csvREFERENCE",
+        "source": "DOSAGE.csv",
+        "target": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "ASSAY.csvFNFNUM",
+        "source": "ASSAY.csv",
+        "target": "FNFNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "ASSAY.csvINDIVIDUAL",
+        "source": "ASSAY.csv",
+        "target": "INDIVIDUAL"
+      }
+    },
+    {
+      "data": {
+        "id": "ASSAY.csvNAME",
+        "source": "ASSAY.csv",
+        "target": "NAME"
+      }
+    },
+    {
+      "data": {
+        "id": "ASSAY.csvCOMMENTS",
+        "source": "ASSAY.csv",
+        "target": "COMMENTS"
+      }
+    },
+    {
+      "data": {
+        "id": "ASSAY.csvREFERENCE",
+        "source": "ASSAY.csv",
+        "target": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvLOCNUM",
+        "source": "YIELDS.csv",
+        "target": "LOCNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvSOURCE",
+        "source": "YIELDS.csv",
+        "target": "SOURCE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvREPTRYLD",
+        "source": "YIELDS.csv",
+        "target": "REPTRYLD"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvWEEDED",
+        "source": "YIELDS.csv",
+        "target": "WEEDED"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvCULVATED",
+        "source": "YIELDS.csv",
+        "target": "CULVATED"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvNUM",
+        "source": "YIELDS.csv",
+        "target": "NUM"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvPLCO",
+        "source": "YIELDS.csv",
+        "target": "PLCO"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvLOCNO",
+        "source": "YIELDS.csv",
+        "target": "LOCNO"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvVARYD",
+        "source": "YIELDS.csv",
+        "target": "VARYD"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvANAVPRCP",
+        "source": "YIELDS.csv",
+        "target": "ANAVPRCP"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvBIOTEMP",
+        "source": "YIELDS.csv",
+        "target": "BIOTEMP"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvSOIL",
+        "source": "YIELDS.csv",
+        "target": "SOIL"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvPH",
+        "source": "YIELDS.csv",
+        "target": "PH"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvRH",
+        "source": "YIELDS.csv",
+        "target": "RH"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvIRRIG",
+        "source": "YIELDS.csv",
+        "target": "IRRIG"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvMINTEMP",
+        "source": "YIELDS.csv",
+        "target": "MINTEMP"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvMAXTEMP",
+        "source": "YIELDS.csv",
+        "target": "MAXTEMP"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvGROWSEAS",
+        "source": "YIELDS.csv",
+        "target": "GROWSEAS"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvYIELDLO",
+        "source": "YIELDS.csv",
+        "target": "YIELDLO"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvYIELDHI",
+        "source": "YIELDS.csv",
+        "target": "YIELDHI"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvPARTHARV",
+        "source": "YIELDS.csv",
+        "target": "PARTHARV"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvNFERT",
+        "source": "YIELDS.csv",
+        "target": "NFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvPFERT",
+        "source": "YIELDS.csv",
+        "target": "PFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvKFERT",
+        "source": "YIELDS.csv",
+        "target": "KFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvPESTCIDE",
+        "source": "YIELDS.csv",
+        "target": "PESTCIDE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvHERBCIDE",
+        "source": "YIELDS.csv",
+        "target": "HERBCIDE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvSEEDLVL",
+        "source": "YIELDS.csv",
+        "target": "SEEDLVL"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvMANURE",
+        "source": "YIELDS.csv",
+        "target": "MANURE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvINTCROP",
+        "source": "YIELDS.csv",
+        "target": "INTCROP"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvFUNGCIDE",
+        "source": "YIELDS.csv",
+        "target": "FUNGCIDE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvRATOON",
+        "source": "YIELDS.csv",
+        "target": "RATOON"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvYRSOBS",
+        "source": "YIELDS.csv",
+        "target": "YRSOBS"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvAMTFERT",
+        "source": "YIELDS.csv",
+        "target": "AMTFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvFERTRIAL",
+        "source": "YIELDS.csv",
+        "target": "FERTRIAL"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvFROSTCO",
+        "source": "YIELDS.csv",
+        "target": "FROSTCO"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvABSMINT",
+        "source": "YIELDS.csv",
+        "target": "ABSMINT"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvABSMAXT",
+        "source": "YIELDS.csv",
+        "target": "ABSMAXT"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvOTHFERT",
+        "source": "YIELDS.csv",
+        "target": "OTHFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvYRW1",
+        "source": "YIELDS.csv",
+        "target": "YRW1"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvYRW2",
+        "source": "YIELDS.csv",
+        "target": "YRW2"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvYRSYLD",
+        "source": "YIELDS.csv",
+        "target": "YRSYLD"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvY1YLD",
+        "source": "YIELDS.csv",
+        "target": "Y1YLD"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvY2YLD",
+        "source": "YIELDS.csv",
+        "target": "Y2YLD"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvCONTYLD",
+        "source": "YIELDS.csv",
+        "target": "CONTYLD"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvCONTWEA",
+        "source": "YIELDS.csv",
+        "target": "CONTWEA"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvYMATCHW",
+        "source": "YIELDS.csv",
+        "target": "YMATCHW"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvVERIFIED",
+        "source": "YIELDS.csv",
+        "target": "VERIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvEXPTYPE",
+        "source": "YIELDS.csv",
+        "target": "EXPTYPE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvNTYPE",
+        "source": "YIELDS.csv",
+        "target": "NTYPE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvPTYPE",
+        "source": "YIELDS.csv",
+        "target": "PTYPE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvKTYPE",
+        "source": "YIELDS.csv",
+        "target": "KTYPE"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvWEEDNUM",
+        "source": "YIELDS.csv",
+        "target": "WEEDNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvCULTNUM",
+        "source": "YIELDS.csv",
+        "target": "CULTNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvWSS",
+        "source": "YIELDS.csv",
+        "target": "WSS"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csvTEMPORARY",
+        "source": "YIELDS.csv",
+        "target": "TEMPORARY"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITIES.csvACTIVITY",
+        "source": "ACTIVITIES.csv",
+        "target": "ACTIVITY"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITIES.csvACTUPPER",
+        "source": "ACTIVITIES.csv",
+        "target": "ACTUPPER"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITIES.csvDEFINITION",
+        "source": "ACTIVITIES.csv",
+        "target": "DEFINITION"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITIES.csvREFERENCE",
+        "source": "ACTIVITIES.csv",
+        "target": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITIES.csvUSERID",
+        "source": "ACTIVITIES.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITIES.csvCREATED",
+        "source": "ACTIVITIES.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITIES.csvMODIFIED",
+        "source": "ACTIVITIES.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csvCHEM",
+        "source": "CHEMICALS.csv",
+        "target": "CHEM"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csvCHEMID",
+        "source": "CHEMICALS.csv",
+        "target": "CHEMID"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csvCASNUM",
+        "source": "CHEMICALS.csv",
+        "target": "CASNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csvTODAY",
+        "source": "CHEMICALS.csv",
+        "target": "TODAY"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csvINITIALS",
+        "source": "CHEMICALS.csv",
+        "target": "INITIALS"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csvUSERID",
+        "source": "CHEMICALS.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csvCREATED",
+        "source": "CHEMICALS.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csvMODIFIED",
+        "source": "CHEMICALS.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvFNFNUM",
+        "source": "FARMACY_NEW.csv",
+        "target": "FNFNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvCHEM",
+        "source": "FARMACY_NEW.csv",
+        "target": "CHEM"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvCHEMCLASS",
+        "source": "FARMACY_NEW.csv",
+        "target": "CHEMCLASS"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvPPCO",
+        "source": "FARMACY_NEW.csv",
+        "target": "PPCO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvPLCO",
+        "source": "FARMACY_NEW.csv",
+        "target": "PLCO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvAMT_OR_LO",
+        "source": "FARMACY_NEW.csv",
+        "target": "AMT_OR_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvAMT_HI",
+        "source": "FARMACY_NEW.csv",
+        "target": "AMT_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvAMT_ULHI",
+        "source": "FARMACY_NEW.csv",
+        "target": "AMT_ULHI"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvEOPCT_OR_LO",
+        "source": "FARMACY_NEW.csv",
+        "target": "EOPCT_OR_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvEOPCT_HI",
+        "source": "FARMACY_NEW.csv",
+        "target": "EOPCT_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvINDIVIDUAL",
+        "source": "FARMACY_NEW.csv",
+        "target": "INDIVIDUAL"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvTRACE",
+        "source": "FARMACY_NEW.csv",
+        "target": "TRACE"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvREFERENCE",
+        "source": "FARMACY_NEW.csv",
+        "target": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvREFYR",
+        "source": "FARMACY_NEW.csv",
+        "target": "REFYR"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvLT",
+        "source": "FARMACY_NEW.csv",
+        "target": "LT"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvUSERID",
+        "source": "FARMACY_NEW.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvCREATED",
+        "source": "FARMACY_NEW.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvMODIFIED",
+        "source": "FARMACY_NEW.csv",
+        "target": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvNAPREF",
+        "source": "FARMACY_NEW.csv",
+        "target": "NAPREF"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvAMT_LO",
+        "source": "FARMACY_NEW.csv",
+        "target": "AMT_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvAMT_OR_HI",
+        "source": "FARMACY_NEW.csv",
+        "target": "AMT_OR_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvEOPCT_LO",
+        "source": "FARMACY_NEW.csv",
+        "target": "EOPCT_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvEOPCT_OR_HI",
+        "source": "FARMACY_NEW.csv",
+        "target": "EOPCT_OR_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvQUANT_UNIT",
+        "source": "FARMACY_NEW.csv",
+        "target": "QUANT_UNIT"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csvCHEMID",
+        "source": "FARMACY_NEW.csv",
+        "target": "CHEMID"
+      }
+    },
+    {
+      "data": {
+        "id": "CODES.csvPLNA",
+        "source": "CODES.csv",
+        "target": "PLNA"
+      }
+    },
+    {
+      "data": {
+        "id": "CODES.csvPLCO",
+        "source": "CODES.csv",
+        "target": "PLCO"
+      }
+    },
+    {
+      "data": {
+        "id": "CODES.csvAUTHOR",
+        "source": "CODES.csv",
+        "target": "AUTHOR"
+      }
+    },
+    {
+      "data": {
+        "id": "CODES.csvVALID",
+        "source": "CODES.csv",
+        "target": "VALID"
+      }
+    },
+    {
+      "data": {
+        "id": "CODES.csvPLCOS",
+        "source": "CODES.csv",
+        "target": "PLCOS"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvFNFNUM",
+        "source": "FARMACY.csv",
+        "target": "FNFNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvCHEM",
+        "source": "FARMACY.csv",
+        "target": "CHEM"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvPPCO",
+        "source": "FARMACY.csv",
+        "target": "PPCO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvINDIVIDUAL",
+        "source": "FARMACY.csv",
+        "target": "INDIVIDUAL"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvREFERENCE",
+        "source": "FARMACY.csv",
+        "target": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvASSAY",
+        "source": "FARMACY.csv",
+        "target": "ASSAY"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvAMT_PLUS",
+        "source": "FARMACY.csv",
+        "target": "AMT_PLUS"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvAMT_LO",
+        "source": "FARMACY.csv",
+        "target": "AMT_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvAMT_OR_HI",
+        "source": "FARMACY.csv",
+        "target": "AMT_OR_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvWEIGHTED",
+        "source": "FARMACY.csv",
+        "target": "WEIGHTED"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvCOMPARISON",
+        "source": "FARMACY.csv",
+        "target": "COMPARISON"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvTRACE",
+        "source": "FARMACY.csv",
+        "target": "TRACE"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvLESSTHAN",
+        "source": "FARMACY.csv",
+        "target": "LESSTHAN"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvEOPCT_LO",
+        "source": "FARMACY.csv",
+        "target": "EOPCT_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvEOPCT_OR_HI",
+        "source": "FARMACY.csv",
+        "target": "EOPCT_OR_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvREFYR",
+        "source": "FARMACY.csv",
+        "target": "REFYR"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvNAPREF",
+        "source": "FARMACY.csv",
+        "target": "NAPREF"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvUSERID",
+        "source": "FARMACY.csv",
+        "target": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvCREATED",
+        "source": "FARMACY.csv",
+        "target": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csvMODIFIED",
+        "source": "FARMACY.csv",
+        "target": "MODIFIED"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "data": {
+        "id": "FNFTAX.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "PARTS.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "REFERENCES.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGREGAC.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "SUPERACT.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEM_MEANS.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "COMMON_NAMES.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNOBOT.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "DOSAGE.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "ASSAY.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDS.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITIES.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMICALS.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY_NEW.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "CODES.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "FARMACY.csv"
+      }
+    },
+    {
+      "data": {
+        "id": "COUNTRY"
+      }
+    },
+    {
+      "data": {
+        "id": "PH"
+      }
+    },
+    {
+      "data": {
+        "id": "ETHNO"
+      }
+    },
+    {
+      "data": {
+        "id": "IRRIG"
+      }
+    },
+    {
+      "data": {
+        "id": "GROWSEAS"
+      }
+    },
+    {
+      "data": {
+        "id": "FROSTCO"
+      }
+    },
+    {
+      "data": {
+        "id": "PPCO"
+      }
+    },
+    {
+      "data": {
+        "id": "ABSMINT"
+      }
+    },
+    {
+      "data": {
+        "id": "NTYPE"
+      }
+    },
+    {
+      "data": {
+        "id": "EOPCT_OR_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "Y2YLD"
+      }
+    },
+    {
+      "data": {
+        "id": "CULTAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "PFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "AGGNO"
+      }
+    },
+    {
+      "data": {
+        "id": "COMPARISON"
+      }
+    },
+    {
+      "data": {
+        "id": "DOSAGE"
+      }
+    },
+    {
+      "data": {
+        "id": "VARYD"
+      }
+    },
+    {
+      "data": {
+        "id": "DEFINITION"
+      }
+    },
+    {
+      "data": {
+        "id": "LESSTHAN"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMCLASS"
+      }
+    },
+    {
+      "data": {
+        "id": "SPXAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "PLCOS"
+      }
+    },
+    {
+      "data": {
+        "id": "CONTWEA"
+      }
+    },
+    {
+      "data": {
+        "id": "REFERENCE"
+      }
+    },
+    {
+      "data": {
+        "id": "HERBCIDE"
+      }
+    },
+    {
+      "data": {
+        "id": "KFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "EOPCT_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "RH"
+      }
+    },
+    {
+      "data": {
+        "id": "SPCMT"
+      }
+    },
+    {
+      "data": {
+        "id": "MAJORACT"
+      }
+    },
+    {
+      "data": {
+        "id": "NAPREF"
+      }
+    },
+    {
+      "data": {
+        "id": "YRW2"
+      }
+    },
+    {
+      "data": {
+        "id": "NFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "TEMPORARY"
+      }
+    },
+    {
+      "data": {
+        "id": "EOPCT_OR_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "SUBSPECIES"
+      }
+    },
+    {
+      "data": {
+        "id": "LOCNO"
+      }
+    },
+    {
+      "data": {
+        "id": "AMT_OR_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "TRACE"
+      }
+    },
+    {
+      "data": {
+        "id": "ANAVPRCP"
+      }
+    },
+    {
+      "data": {
+        "id": "SPRANK"
+      }
+    },
+    {
+      "data": {
+        "id": "VALID"
+      }
+    },
+    {
+      "data": {
+        "id": "PPNA"
+      }
+    },
+    {
+      "data": {
+        "id": "PLNA"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEMID"
+      }
+    },
+    {
+      "data": {
+        "id": "SPFAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "CULTIVAR"
+      }
+    },
+    {
+      "data": {
+        "id": "CREATED"
+      }
+    },
+    {
+      "data": {
+        "id": "Y1YLD"
+      }
+    },
+    {
+      "data": {
+        "id": "COMMENTS"
+      }
+    },
+    {
+      "data": {
+        "id": "ASSAY"
+      }
+    },
+    {
+      "data": {
+        "id": "AMT_ULHI"
+      }
+    },
+    {
+      "data": {
+        "id": "LONGREF"
+      }
+    },
+    {
+      "data": {
+        "id": "AMT_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "VALIDTAXNO"
+      }
+    },
+    {
+      "data": {
+        "id": "SPVAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "FORMA"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDLO"
+      }
+    },
+    {
+      "data": {
+        "id": "NOTE"
+      }
+    },
+    {
+      "data": {
+        "id": "NUM"
+      }
+    },
+    {
+      "data": {
+        "id": "SPSAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "PTYPE"
+      }
+    },
+    {
+      "data": {
+        "id": "OTHFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "std"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTUPPER"
+      }
+    },
+    {
+      "data": {
+        "id": "ACTIVITY"
+      }
+    },
+    {
+      "data": {
+        "id": "EOPCT_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "NAME"
+      }
+    },
+    {
+      "data": {
+        "id": "FUNGCIDE"
+      }
+    },
+    {
+      "data": {
+        "id": "GRINVERIFY"
+      }
+    },
+    {
+      "data": {
+        "id": "EFFECTIVE"
+      }
+    },
+    {
+      "data": {
+        "id": "TAXAUTHOR"
+      }
+    },
+    {
+      "data": {
+        "id": "USERID"
+      }
+    },
+    {
+      "data": {
+        "id": "WEEDNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "FNFNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "part_id"
+      }
+    },
+    {
+      "data": {
+        "id": "GENUS"
+      }
+    },
+    {
+      "data": {
+        "id": "YRSOBS"
+      }
+    },
+    {
+      "data": {
+        "id": "AUTHOR"
+      }
+    },
+    {
+      "data": {
+        "id": "chem_id"
+      }
+    },
+    {
+      "data": {
+        "id": "WEIGHTED"
+      }
+    },
+    {
+      "data": {
+        "id": "avg"
+      }
+    },
+    {
+      "data": {
+        "id": "INITIALS"
+      }
+    },
+    {
+      "data": {
+        "id": "CONTYLD"
+      }
+    },
+    {
+      "data": {
+        "id": "ABSMAXT"
+      }
+    },
+    {
+      "data": {
+        "id": "AMT_OR_LO"
+      }
+    },
+    {
+      "data": {
+        "id": "MODIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "TODAY"
+      }
+    },
+    {
+      "data": {
+        "id": "SPXNAM"
+      }
+    },
+    {
+      "data": {
+        "id": "SOURCE"
+      }
+    },
+    {
+      "data": {
+        "id": "WEEDED"
+      }
+    },
+    {
+      "data": {
+        "id": "MAXTEMP"
+      }
+    },
+    {
+      "data": {
+        "id": "cnt"
+      }
+    },
+    {
+      "data": {
+        "id": "INDIVIDUAL"
+      }
+    },
+    {
+      "data": {
+        "id": "USEAGE"
+      }
+    },
+    {
+      "data": {
+        "id": "CNNAM"
+      }
+    },
+    {
+      "data": {
+        "id": "SPECIES"
+      }
+    },
+    {
+      "data": {
+        "id": "YRW1"
+      }
+    },
+    {
+      "data": {
+        "id": "TAXNO"
+      }
+    },
+    {
+      "data": {
+        "id": "EXPTYPE"
+      }
+    },
+    {
+      "data": {
+        "id": "PARTHARV"
+      }
+    },
+    {
+      "data": {
+        "id": "TAXON"
+      }
+    },
+    {
+      "data": {
+        "id": "LOCNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "AMT_PLUS"
+      }
+    },
+    {
+      "data": {
+        "id": "VERIFIED"
+      }
+    },
+    {
+      "data": {
+        "id": "MANURE"
+      }
+    },
+    {
+      "data": {
+        "id": "VARIETY"
+      }
+    },
+    {
+      "data": {
+        "id": "MINTEMP"
+      }
+    },
+    {
+      "data": {
+        "id": "REPTRYLD"
+      }
+    },
+    {
+      "data": {
+        "id": "AMT_HI"
+      }
+    },
+    {
+      "data": {
+        "id": "CNAME"
+      }
+    },
+    {
+      "data": {
+        "id": "LT"
+      }
+    },
+    {
+      "data": {
+        "id": "CNID"
+      }
+    },
+    {
+      "data": {
+        "id": "SEEDLVL"
+      }
+    },
+    {
+      "data": {
+        "id": "CHEM"
+      }
+    },
+    {
+      "data": {
+        "id": "SUPERACT"
+      }
+    },
+    {
+      "data": {
+        "id": "FAMILY"
+      }
+    },
+    {
+      "data": {
+        "id": "CULTNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "INTCROP"
+      }
+    },
+    {
+      "data": {
+        "id": "CULVATED"
+      }
+    },
+    {
+      "data": {
+        "id": "YIELDHI"
+      }
+    },
+    {
+      "data": {
+        "id": "PESTCIDE"
+      }
+    },
+    {
+      "data": {
+        "id": "KTYPE"
+      }
+    },
+    {
+      "data": {
+        "id": "FERTRIAL"
+      }
+    },
+    {
+      "data": {
+        "id": "SPAUT"
+      }
+    },
+    {
+      "data": {
+        "id": "YRSYLD"
+      }
+    },
+    {
+      "data": {
+        "id": "CASNUM"
+      }
+    },
+    {
+      "data": {
+        "id": "BIOTEMP"
+      }
+    },
+    {
+      "data": {
+        "id": "RATOON"
+      }
+    },
+    {
+      "data": {
+        "id": "PLCO"
+      }
+    },
+    {
+      "data": {
+        "id": "AMTFERT"
+      }
+    },
+    {
+      "data": {
+        "id": "WSS"
+      }
+    },
+    {
+      "data": {
+        "id": "SOIL"
+      }
+    },
+    {
+      "data": {
+        "id": "REFYR"
+      }
+    },
+    {
+      "data": {
+        "id": "QUANT_UNIT"
+      }
+    },
+    {
+      "data": {
+        "id": "YMATCHW"
+      }
+    }
+  ]
+}

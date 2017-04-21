@@ -6,10 +6,11 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
     <title>Multiple instances</title>
 
+    <script src="{{ url_for('static', filename='duke.json') }}"></script>
     <script src="{{ url_for('static', filename='cytoscape.js') }}"></script>
     <script src="{{ url_for('static', filename='code.js') }}"></script>
   </head>
-  <body onload="init()">
+  <body onload="init(data)">
     <div id="cy"></div>
   </body>
 </html>

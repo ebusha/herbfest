@@ -9,7 +9,9 @@ def index():
 
 @app.route("/family/")
 def get_families():
-    return render_template("family.html", title="Families")
+    return render_template("family.html",
+                           title="Families",
+                           results=["first", "second", "third"])
 
 # Add bootstrap, split into 4
 # Create a template for the table

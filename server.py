@@ -12,7 +12,7 @@ def index():
 
 
 @app.route("/taxons/")
-def get_families(title="Family", f="", genera=[], g="", species=[]):
+def get_families(title="Family", f="", genera=[], g="", species=[], s=""):
     return render_template("taxons.html",
                            title=title,
                            families=db.execute('''
@@ -22,11 +22,12 @@ def get_families(title="Family", f="", genera=[], g="", species=[]):
                            f=f,
                            genera=genera,
                            g=g,
-                           species=species)
+                           species=species,
+                           s=s)
 
 
 @app.route("/taxons/<family>/")
-def get_family_genera(family, title="Genus", g="", species=[]):
+def get_family_genera(family, title="Genus", g="", species=[], s=""):
     return get_families(title=title,
                         f=family,
                         genera=db.execute('''
@@ -36,11 +37,12 @@ def get_family_genera(family, title="Genus", g="", species=[]):
                         GROUP BY genus
                         ''' % family).fetchall(),
                         g=g,
-                        species=species)
+                        species=species,
+                        s=s)
 
 
 @app.route("/taxons/<family>/<genus>/")
-def get_family_genera_species(family, genus):
+def get_family_genera_species(family, genus, s=""):
     return get_family_genera(family,
                              title="Species",
                              g=genus,
@@ -48,4 +50,12 @@ def get_family_genera_species(family, genus):
                              SELECT species
                              FROM fgs
                              WHERE family=="%s" and genus=="%s"
-                             ''' % (family, genus)).fetchall())
+                             ''' % (family, genus)).fetchall(),
+                             s=s)
+
+
+@app.route("/taxons/<family>/<genus>/<species>/")
+def selected_species(family, genus, species):
+    return get_family_genera_species(family=family,
+                                     genus=genus,
+                                     s=species)

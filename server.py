@@ -11,7 +11,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/family/")
+@app.route("/taxons/")
 def get_families(title="Family", f="", genera=[], g="", species=[]):
     return render_template("taxons.html",
                            title=title,
@@ -25,7 +25,7 @@ def get_families(title="Family", f="", genera=[], g="", species=[]):
                            species=species)
 
 
-@app.route("/family/<family>/")
+@app.route("/taxons/<family>/")
 def get_family_genera(family, title="Genus", g="", species=[]):
     return get_families(title=title,
                         f=family,
@@ -39,7 +39,7 @@ def get_family_genera(family, title="Genus", g="", species=[]):
                         species=species)
 
 
-@app.route("/family/<family>/<genus>/")
+@app.route("/taxons/<family>/<genus>/")
 def get_family_genera_species(family, genus):
     return get_family_genera(family,
                              title="Species",

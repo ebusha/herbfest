@@ -3,7 +3,7 @@
 <div class="col-md-2">
   <div class="list-group">
     {% for family in families %}
-    <a href="/family/{{ family[0] }}/" class="list-group-item">{{ family[0] }}
+    <a href="/taxons/{{ family[0] }}/" class="list-group-item">{{ family[0] }}
       <span class="badge">{{ family[1] }}</span>
     </a>
     {% endfor %}
@@ -12,7 +12,7 @@
 <div class="col-md-2">
   <div class="list-group">
     {% for genus in genera %}
-    <a href="/family/{{ f }}/{{ genus[0] }}/" class="list-group-item">
+    <a href="/taxons/{{ f }}/{{ genus[0] }}/" class="list-group-item">
       {{ genus[0] }}
       <span class="badge">{{ genus[1] }}</span>
     </a>
@@ -22,7 +22,7 @@
 <div class="col-md-2">
   <div class="list-group">
     {% for plant in species %}
-    <a href="/family/{{ f }}/{{ g }}/" class="list-group-item">
+    <a href="/taxons/{{ f }}/{{ g }}/" class="list-group-item">
       {{ plant[0] }}
     </a>
     {% endfor %}

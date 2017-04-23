@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" />
-    <link href="{{ url_for('static', filename='css/bootstrap-theme.css') }}" rel="stylesheet" />
-    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
-    <title>Family</title>
-    <script src="{{ url_for('static', filename='jquery-3.2.1.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2">
-          Families
-        </div>
-        <div class="col-md-10">
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<div class="col-md-2">
+  <div class="list-group">
+    <a href="#" class="list-group-item">First item<span class="badge">12</span></a>
+    <a href="#" class="list-group-item">Second item</a>
+    <a href="#" class="list-group-item">Third item</a>
+  </div>
+</div>
+<div class="col-md-10">
+</div>
+{% endblock %}

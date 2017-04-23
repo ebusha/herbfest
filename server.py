@@ -12,50 +12,52 @@ def index():
 
 
 @app.route("/taxons/")
-def get_families(title="Family", f="", genera=[], g="", species=[], s=""):
-    return render_template("taxons.html",
-                           title=title,
-                           families=db.execute('''
-                           SELECT family, COUNT(family)
-                           FROM fgs GROUP BY family
-                           ''').fetchall(),
-                           f=f,
-                           genera=genera,
-                           g=g,
-                           species=species,
-                           s=s)
+def get_families(**kwargs):
+    base = {"title": "Family",
+            "families": db.execute('''
+            SELECT family, COUNT(family)
+            FROM fgs GROUP BY family
+            ''').fetchall(),
+            "f": "",
+            "genera": [],
+            "g": "",
+            "species": [],
+            "s": "",
+            "display": ""}
+    base.update(kwargs)
+    return render_template("taxons.html", **base)
 
 
 @app.route("/taxons/<family>/")
-def get_family_genera(family, title="Genus", g="", species=[], s=""):
-    return get_families(title=title,
-                        f=family,
-                        genera=db.execute('''
-                        SELECT genus, COUNT(genus)
-                        FROM fgs
-                        WHERE family=="%s"
-                        GROUP BY genus
-                        ''' % family).fetchall(),
-                        g=g,
-                        species=species,
-                        s=s)
+def get_family_genera(family, **kwargs):
+    base = {"title": "Genus",
+            "f": family,
+            "genera": db.execute('''
+            SELECT genus, COUNT(genus)
+            FROM fgs
+            WHERE family=="%s"
+            GROUP BY genus
+            ''' % family).fetchall()}
+    base.update(kwargs)
+    return get_families(**base)
 
 
 @app.route("/taxons/<family>/<genus>/")
-def get_family_genera_species(family, genus, s=""):
-    return get_family_genera(family,
-                             title="Species",
-                             g=genus,
-                             species=db.execute('''
-                             SELECT species
-                             FROM fgs
-                             WHERE family=="%s" and genus=="%s"
-                             ''' % (family, genus)).fetchall(),
-                             s=s)
+def get_family_genera_species(family, genus, **kwargs):
+    base = {"title": "Species",
+            "g": genus,
+            "species": db.execute('''
+            SELECT species
+            FROM fgs
+            WHERE family=="%s" and genus=="%s"
+            ''' % (family, genus)).fetchall()}
+    base.update(kwargs)
+    return get_family_genera(family, **base)
 
 
 @app.route("/taxons/<family>/<genus>/<species>/")
 def selected_species(family, genus, species):
     return get_family_genera_species(family=family,
                                      genus=genus,
-                                     s=species)
+                                     s=species,
+                                     display=species)

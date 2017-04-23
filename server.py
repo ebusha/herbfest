@@ -23,9 +23,9 @@ def get_families(**kwargs):
             "g": "",
             "species": [],
             "s": "",
-            "display": ""}
+            "summary": ""}
     base.update(kwargs)
-    return render_template("taxons.html", **base)
+    return render_template("display.html", **base)
 
 
 @app.route("/taxons/<family>/")
@@ -37,7 +37,8 @@ def get_family_genera(family, **kwargs):
             FROM fgs
             WHERE family=="%s"
             GROUP BY genus
-            ''' % family).fetchall()}
+            ''' % family).fetchall(),
+            "summary": family}
     base.update(kwargs)
     return get_families(**base)
 
@@ -50,7 +51,8 @@ def get_family_genera_species(family, genus, **kwargs):
             SELECT species
             FROM fgs
             WHERE family=="%s" and genus=="%s"
-            ''' % (family, genus)).fetchall()}
+            ''' % (family, genus)).fetchall(),
+            "summary": genus}
     base.update(kwargs)
     return get_family_genera(family, **base)
 
@@ -60,4 +62,4 @@ def selected_species(family, genus, species):
     return get_family_genera_species(family=family,
                                      genus=genus,
                                      s=species,
-                                     display=species)
+                                     summary=species)

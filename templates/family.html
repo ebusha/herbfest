@@ -3,7 +3,7 @@
 <div class="col-md-2">
   <div class="list-group">
     {% for result in results %}
-    <a href="#" class="list-group-item">{{ result[0] }}
+    <a href="/family/{{ result[0] }}/" class="list-group-item">{{ result[0] }}
       <span class="badge">{{ result[1] }}</span>
     </a>
     {% endfor %}

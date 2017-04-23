@@ -12,50 +12,40 @@ def index():
 
 
 @app.route("/family/")
-def get_families():
-    return render_template("family.html",
-                           title="Family",
-                           results=db.execute('''
+def get_families(title="Family", f="", genera=[], g="", species=[]):
+    return render_template("taxons.html",
+                           title=title,
+                           families=db.execute('''
                            SELECT family, COUNT(family)
                            FROM fgs GROUP BY family
-                           ''').fetchall())
+                           ''').fetchall(),
+                           f=f,
+                           genera=genera,
+                           g=g,
+                           species=species)
 
 
 @app.route("/family/<family>/")
-def get_family_genus(family):
-    return render_template("genus.html",
-                           title="Genus",
-                           f=family,
-                           families=db.execute('''
-                           SELECT family, COUNT(family)
-                           FROM fgs GROUP BY family
-                           ''').fetchall(),
-                           genera=db.execute('''
-                           SELECT genus, COUNT(genus)
-                           FROM fgs
-                           WHERE family=="%s"
-                           GROUP BY genus
-                           ''' % family).fetchall())
+def get_family_genera(family, title="Genus", g="", species=[]):
+    return get_families(title=title,
+                        f=family,
+                        genera=db.execute('''
+                        SELECT genus, COUNT(genus)
+                        FROM fgs
+                        WHERE family=="%s"
+                        GROUP BY genus
+                        ''' % family).fetchall(),
+                        g=g,
+                        species=species)
 
 
 @app.route("/family/<family>/<genus>/")
-def get_family_genus_species(family, genus):
-    return render_template("species.html",
-                           title="Genus",
-                           f=family,
-                           families=db.execute('''
-                           SELECT family, COUNT(family)
-                           FROM fgs GROUP BY family
-                           ''').fetchall(),
-                           g=genus,
-                           genera=db.execute('''
-                           SELECT genus, COUNT(genus)
-                           FROM fgs
-                           WHERE family=="%s"
-                           GROUP BY genus
-                           ''' % family).fetchall(),
-                           species=db.execute('''
-                           SELECT species
-                           FROM fgs
-                           WHERE family=="%s" and genus=="%s"
-                           ''' % (family, genus)).fetchall())
+def get_family_genera_species(family, genus):
+    return get_family_genera(family,
+                             title="Species",
+                             g=genus,
+                             species=db.execute('''
+                             SELECT species
+                             FROM fgs
+                             WHERE family=="%s" and genus=="%s"
+                             ''' % (family, genus)).fetchall())

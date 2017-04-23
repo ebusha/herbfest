@@ -3,7 +3,9 @@
 <div class="col-md-2">
   <div class="list-group">
     {% for family in families %}
-    <a href="/taxons/{{ family[0] }}/" class="list-group-item">{{ family[0] }}
+    <a href="/taxons/{{ family[0] }}/"
+       class="list-group-item {{ "active" if family[0]==f }}">
+      {{ family[0] }}
       <span class="badge">{{ family[1] }}</span>
     </a>
     {% endfor %}
@@ -12,7 +14,8 @@
 <div class="col-md-2">
   <div class="list-group">
     {% for genus in genera %}
-    <a href="/taxons/{{ f }}/{{ genus[0] }}/" class="list-group-item">
+    <a href="/taxons/{{ f }}/{{ genus[0] }}/"
+       class="list-group-item {{ "active" if genus[0]==g }}">
       {{ genus[0] }}
       <span class="badge">{{ genus[1] }}</span>
     </a>

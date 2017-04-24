@@ -15,7 +15,7 @@ def index():
 def get_families(**kwargs):
     base = {"title": "Family",
             "families": db.execute('''
-            SELECT family, COUNT(family)
+            SELECT family, COUNT (DISTINCT genus)
             FROM fgs GROUP BY family
             ''').fetchall(),
             "f": "",

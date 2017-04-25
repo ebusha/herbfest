@@ -2,18 +2,20 @@
 {% block display %}
 <div class="container-fluid">
   <div class="row">
-    <p>{{ summary }}</p>
     <p>Scientific name: Origanum vulgare var. gracile</p>
-    <p>Common name(s): a, b, c</p>
+    <p>Common name(s): {{ summary['cnames'] }}</p>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
       <div id="activities-chart">
-        <script> c3.generate({{ summary|tojson|safe }}) </script>
+        <script> c3.generate({{ summary['acts']|tojson|safe }}) </script>
       </div>
     </div>
-    <div class="col-md-6">
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <div id="superactivities-chart">
+        <script> c3.generate({{ summary['sup_acts']|tojson|safe }}) </script>
       </div>
     </div>
   </div>

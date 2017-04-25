@@ -3,13 +3,12 @@ import sqlite3
 conn = sqlite3.connect("duke/duke.db")
 db = conn.cursor()
 
-f = "Brassicaceae"
-g = "Lepidium"
-s = "meyenii"
-fnfnum = "2388"
-q = (f, g, s)
-chem = "ZINC"
-act = 'Antitumor'
+
+def format(bind, data, title):
+    return {'bindto': bind,
+            'data': {'columns': [[k, v] for k, v in data.items()],
+                     'type': 'donut'},
+            'donut': {'title': title}}
 
 
 def get_activities(chem):
@@ -28,7 +27,7 @@ def get_super_activities(act):
     ''' % act).fetchall()]
 
 
-def fgs_get_summary(f, g, s):
+def make_summary(f, g, s):
     fnfnum = db.execute('''
     SELECT fnfnum
     FROM fnftax
@@ -55,11 +54,13 @@ def fgs_get_summary(f, g, s):
     for c in chems:
         acts.extend(get_activities(c))
     acts_sum = {a: acts.count(a) for a in set(acts)}
+    acts_sum = {k: v for k, v in acts_sum.items() if v > 5}
 
     super_acts = []
     for a in acts:
         super_acts.extend(get_super_activities(a))
     super_acts_sum = {sa: super_acts.count(sa) for sa in set(super_acts)}
+    super_acts_sum = {k: v for k, v in super_acts_sum.items() if v > 100}
 
     return {"cnames": cnames,
             # The one with classes was used since the other is only
@@ -67,3 +68,14 @@ def fgs_get_summary(f, g, s):
             "chems": chems_classes,
             "acts": acts_sum,
             "sup_acts": super_acts_sum}
+
+
+def get_summary(f, g, s):
+    temp = make_summary(f, g, s)
+    temp['acts'] = format("#activities-chart",
+                          temp['acts'],
+                          "Chemical Activities")
+    temp['sup_acts'] = format("#superactivities-chart",
+                              temp['sup_acts'],
+                              "Chemical Syndromes")
+    return temp

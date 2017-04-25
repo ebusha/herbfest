@@ -1,17 +1,10 @@
 import sqlite3
 from flask import Flask, render_template
+from summary import get_summary
 
 app = Flask(__name__)
 conn = sqlite3.connect("duke/duke.db")
 db = conn.cursor()
-js = {'bindto': '#activities-chart',
-      'data': {'columns': [['data1', 30], ['data2', 120]],
-               'type': 'donut'},
-      'donut': {'title': 'IrisPetalWidth'}}
-
-
-def get_summary(family, genus, species):
-    return js
 
 
 @app.route("/")

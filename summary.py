@@ -33,7 +33,7 @@ def make_summary(f, g, s):
                "sup_acts": {},
                "ethnobot": {},
                "countries": {},
-               "cnames": [],
+               "cnames": set(),
                "taxon": ""}
     
     test = db.execute('''
@@ -45,12 +45,12 @@ def make_summary(f, g, s):
     if test != []:
         fnfnum, summary["taxon"] = test[0]
         
-        summary["cnames"] = [name[0] for name in
+        summary["cnames"] = {name[0] for name in
                              db.execute('''
                              SELECT cnnam
                              FROM common_names
                              WHERE fnfnum=="%s"
-                             ''' % fnfnum).fetchall()]
+                             ''' % fnfnum).fetchall()}
 
         # Don't forget to grab dosages later.
         # The dosages in aggregac and dosages are different.
@@ -89,7 +89,8 @@ def make_summary(f, g, s):
     if test != []:
         ethnobot = [t[0] for t in test]
         summary["ethnobot"] = dict(Counter({e: ethnobot.count(e) for e in set(ethnobot)}).most_common(10))
-        summary["cnames"] += [t[1] for t in test]
+        print summary["cnames"]
+        summary["cnames"] = summary["cnames"] | {t[1] for t in test}
         countries = [t[2] for t in test]
         summary["countries"] = dict(Counter({c: countries.count(c) for c in set(countries)}).most_common(10))
         summary["taxon"] = t[3]

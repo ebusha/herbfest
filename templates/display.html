@@ -1,4 +1,30 @@
 {% extends "taxons.html" %}
 {% block display %}
-{{ summary }}
+<div class="container-fluid">
+  <div class="row">
+    <p>{{ summary }}</p>
+    <p>Scientific name: Origanum vulgare var. gracile</p>
+    <p>Common name(s): a, b, c</p>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div id="activities-chart">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="superactivities-chart">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div id="ethno-chart">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="countries-chart">
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

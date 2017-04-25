@@ -41,7 +41,6 @@ def make_summary(f, g, s):
     FROM fnftax
     WHERE family="%s" AND genus="%s" AND species="%s"
     ''' % (f, g, s)).fetchall()
-    print(test)
     # If it fails, it was from ethnobot.
     if test != []:
         fnfnum, summary["taxon"] = test[0]
@@ -89,10 +88,10 @@ def make_summary(f, g, s):
     ''' % (f, g, s)).fetchall()
     if test != []:
         ethnobot = [t[0] for t in test]
-        summary["ethnobot"] = {e: ethnobot.count(e) for e in set(ethnobot)}
+        summary["ethnobot"] = dict(Counter({e: ethnobot.count(e) for e in set(ethnobot)}).most_common(10))
         summary["cnames"] += [t[1] for t in test]
         countries = [t[2] for t in test]
-        summary["countries"] = {c: countries.count(c) for c in set(countries)}
+        summary["countries"] = dict(Counter({c: countries.count(c) for c in set(countries)}).most_common(10))
         summary["taxon"] = t[3]
 
     return summary

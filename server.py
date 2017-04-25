@@ -8,7 +8,7 @@ db = conn.cursor()
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("test.html")
 
 
 @app.route("/taxons/")

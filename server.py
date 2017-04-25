@@ -4,6 +4,14 @@ from flask import Flask, render_template
 app = Flask(__name__)
 conn = sqlite3.connect("duke/duke.db")
 db = conn.cursor()
+js = {'bindto': '#activities-chart',
+      'data': {'columns': [['data1', 30], ['data2', 120]],
+               'type': 'donut'},
+      'donut': {'title': 'IrisPetalWidth'}}
+
+
+def get_summary(family, genus, species):
+    return js
 
 
 @app.route("/")
@@ -22,9 +30,9 @@ def get_families(**kwargs):
             "genera": [],
             "g": "",
             "species": [],
-            "s": "",
-            "summary": ""}
+            "s": ""}
     base.update(kwargs)
+    base.update({"summary": get_summary(base["f"], base["g"], base["s"])})
     return render_template("display.html", **base)
 
 
@@ -37,8 +45,7 @@ def get_family_genera(family, **kwargs):
             FROM fgs
             WHERE family=="%s"
             GROUP BY genus
-            ''' % family).fetchall(),
-            "summary": family}
+            ''' % family).fetchall()}
     base.update(kwargs)
     return get_families(**base)
 
@@ -51,8 +58,7 @@ def get_family_genera_species(family, genus, **kwargs):
             SELECT species
             FROM fgs
             WHERE family=="%s" and genus=="%s"
-            ''' % (family, genus)).fetchall(),
-            "summary": genus}
+            ''' % (family, genus)).fetchall()}
     base.update(kwargs)
     return get_family_genera(family, **base)
 
@@ -61,5 +67,4 @@ def get_family_genera_species(family, genus, **kwargs):
 def selected_species(family, genus, species):
     return get_family_genera_species(family=family,
                                      genus=genus,
-                                     s=species,
-                                     summary=species)
+                                     s=species)

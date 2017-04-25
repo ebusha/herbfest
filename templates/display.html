@@ -9,6 +9,7 @@
   <div class="row">
     <div class="col-md-6">
       <div id="activities-chart">
+        <script> c3.generate({{ summary|tojson|safe }}) </script>
       </div>
     </div>
     <div class="col-md-6">

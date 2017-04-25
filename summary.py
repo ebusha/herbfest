@@ -1,3 +1,4 @@
+from collections import Counter
 import sqlite3
 
 conn = sqlite3.connect("duke/duke.db")
@@ -54,13 +55,13 @@ def make_summary(f, g, s):
     for c in chems:
         acts.extend(get_activities(c))
     acts_sum = {a: acts.count(a) for a in set(acts)}
-    acts_sum = {k: v for k, v in acts_sum.items() if v > 5}
+    acts_sum = dict(Counter(acts_sum).most_common(10))
 
     super_acts = []
     for a in acts:
         super_acts.extend(get_super_activities(a))
     super_acts_sum = {sa: super_acts.count(sa) for sa in set(super_acts)}
-    super_acts_sum = {k: v for k, v in super_acts_sum.items() if v > 100}
+    super_acts_sum = dict(Counter(super_acts_sum).most_common(10))
 
     return {"cnames": cnames,
             # The one with classes was used since the other is only

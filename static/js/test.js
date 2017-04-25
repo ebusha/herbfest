@@ -1,4 +1,4 @@
-function start (){
+$(function() {
     console.log("started")
     c3.generate({
         bindto: '#chart',
@@ -9,4 +9,4 @@ function start (){
             ]
         }
     });
-}
+})

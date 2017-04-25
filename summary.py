@@ -29,12 +29,13 @@ def get_super_activities(act):
 
 
 def make_summary(f, g, s):
-    fnfnum = db.execute('''
-    SELECT fnfnum
+    fnfnum, taxon = db.execute('''
+    SELECT fnfnum, taxon
     FROM fnftax
     WHERE family=="%s" AND genus=="%s" AND species=="%s"
-    ''' % (f, g, s)).fetchall()[0][0]
+    ''' % (f, g, s)).fetchall()[0]
 
+    
     cnames = [name[0] for name in
               db.execute('''
               SELECT cnnam
@@ -63,7 +64,8 @@ def make_summary(f, g, s):
     super_acts_sum = {sa: super_acts.count(sa) for sa in set(super_acts)}
     super_acts_sum = dict(Counter(super_acts_sum).most_common(10))
 
-    return {"cnames": cnames,
+    return {"taxon": taxon,
+            "cnames": cnames,
             # The one with classes was used since the other is only
             # used as an aggregate.
             "chems": chems_classes,

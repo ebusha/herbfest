@@ -2,8 +2,8 @@
 {% block display %}
 <div class="container-fluid">
   <div class="row">
-    <p>Scientific name: Origanum vulgare var. gracile</p>
-    <p>Common name(s): {{ summary['cnames'] }}</p>
+    <p>Scientific name: {{ summary['taxon'] }}</p>
+    <p>Common name(s): {% for cname in summary['cnames'] %} {{ cname }} {% endfor %}</p>
   </div>
   <div class="row">
     <div class="col-md-12">

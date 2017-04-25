@@ -20,12 +20,16 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
       <div id="ethno-chart">
+        <script> c3.generate({{ summary['ethnobot']|tojson|safe }}) </script>
       </div>
     </div>
-    <div class="col-md-6">
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <div id="countries-chart">
+        <script> c3.generate({{ summary['countries']|tojson|safe }}) </script>
       </div>
     </div>
   </div>

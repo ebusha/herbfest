@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-md-4">
+  <div class="list-group">
+    {{ results }}
+    {% for result in results %}
+    <a href="/taxons/{{result[0]}}/{{result[1]}}/{{result[2]}}"
+       class="list-group-item">
+      {{ result[3] }}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

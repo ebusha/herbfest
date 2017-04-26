@@ -89,8 +89,7 @@ def make_summary(f, g, s):
     if test != []:
         ethnobot = [t[0] for t in test]
         summary["ethnobot"] = dict(Counter({e: ethnobot.count(e) for e in set(ethnobot)}).most_common(10))
-        print summary["cnames"]
-        summary["cnames"] = summary["cnames"] | {t[1] for t in test}
+        summary["cnames"] = summary["cnames"] | {t[1] for t in test if t[1] != ""}
         countries = [t[2] for t in test]
         summary["countries"] = dict(Counter({c: countries.count(c) for c in set(countries)}).most_common(10))
         summary["taxon"] = t[3]

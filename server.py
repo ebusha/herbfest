@@ -12,6 +12,22 @@ def index():
     return render_template("test.html")
 
 
+@app.route("/search/<term>/")
+def search(term):
+    print(term)
+    common_results = db.execute('''
+    SELECT family, genus, species, cname
+    FROM ethnobot
+    WHERE cname LIKE ?
+    ''', ("\"%" + term + "%\"",)).fetchall()
+    print(common_results)
+    taxon_results = db.execute('''
+    SELECT family, genus, species, taxon
+    FROM ethnobot
+    WHERE taxon LIKE ?
+    ''', ("\"%" + term + "%\"",)).fetchall()
+    return render_template("search.html", results=common_results+taxon_results)
+
 @app.route("/taxons/")
 def get_families(**kwargs):
     base = {"title": "Family",
